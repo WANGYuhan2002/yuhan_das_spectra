@@ -1,0 +1,51 @@
+NOTICE
+======
+
+yuhan_das_spectra — Spectral analysis tools for seafloor DAS: noise PSD/PPSD,
+earthquake spectra, noise-weather comparison
+GitHub version of check_minmag_pkg from the Zenodo software archive
+10.5281/zenodo.20715241 (v1.0.0).
+
+Copyright (c) 2026 Yuhan Wang. Except where stated below, the code in this
+repository is released under the MIT License (see LICENSE).
+
+This repository also contains third-party code and third-party data. They are
+listed below with their authors and terms. The third-party code is
+redistributed here for research and for the reproducibility of the results in
+the paper cited in README.md. The original author headers are kept unchanged in
+the source files. This notice does not imply that the original authors or
+their institutions endorse this repository.
+
+
+1. load_das_h5_PE2024.py — reader for the downsampled DAS HDF5 files
+--------------------------------------------------------------------------------
+Author:         Pascal Edme, ETH Zürich. Derived from original code by
+                Sara Klaasen and Daniel Bowden; the file header reads
+                "Derived from Sara and Daniel's original code to read Silixa
+                iDASv2 format".
+File:           functions/load_das_h5_PE2024.py
+Modifications:  One diagnostic print statement was commented out; otherwise the
+                file is unmodified.
+Licence:        No licence was supplied with this code. It is redistributed
+                here for research and reproducibility only; permission from
+                the original authors is being sought. All rights remain with
+                the authors.
+
+
+2. ERA5 data — meteo/kefa_atmos_data.csv, meteo/kefa_wave_data.csv
+--------------------------------------------------------------------------------
+Source:         ERA5 reanalysis (Hersbach, H., et al., 2020, The ERA5 global
+                reanalysis, Q. J. R. Meteorol. Soc., 146, 1999-2049,
+                https://doi.org/10.1002/qj.3803), produced by the European
+                Centre for Medium-Range Weather Forecasts (ECMWF) for the
+                Copernicus Climate Change Service (C3S) and obtained from the
+                Copernicus Climate Data Store (CDS).
+Processing:     hourly point extraction at the grid point nearest to 38.5 N,
+                20.5 E, 2024-04-24 to 2024-06-22; wind speed and direction
+                derived from the 10 m u/v components (see meteo/README.md).
+Attribution:    Contains modified Copernicus Climate Change Service
+                information. Neither the European Commission nor ECMWF is
+                responsible for any use that may be made of the Copernicus
+                information or data it contains.
+Terms:          the terms of use of the Copernicus Climate Data Store apply to
+                these data.

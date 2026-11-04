@@ -1,0 +1,60 @@
+# ---------------------------------------------------------------------------
+# yuhan_das_spectra (GitHub version of check_minmag_pkg)
+# Raw DAS data, intermediate PSD h5 files and recomputed run outputs are not
+# committed; large intermediate samples are in the Zenodo archive
+# 10.5281/zenodo.20715241 (matched_filter_release.zip -> check_minmag_pkg/).
+# Files that ARE shipped on purpose are re-included with "!" rules below.
+# ---------------------------------------------------------------------------
+
+# --- Python caches, builds, environments -----------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# --- OS / editor junk -------------------------------------------------------
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+desktop.ini
+*~
+*.swp
+.~lock.*#
+.idea/
+.vscode/
+
+# --- data formats (DAS, seismic, arrays, pickles, NetCDF/GRIB, archives) ----
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.mseed
+*.miniseed
+*.sac
+*.segy
+*.sgy
+*.tdms
+*.nc
+*.grib
+*.zip
+*.tar.gz
+# shipped on purpose: the frozen noise trend product
+!products/noise_trends_f8-20Hz_p5.h5
+
+# --- input-data folders and recomputed run outputs --------------------------
+IN_DAS_data/
+noise_psd/chunk*/
+eq_spectra/eq_list/*/*/
+meteo/acquire_era5/kefa_wind/
+meteo/acquire_era5/*.png

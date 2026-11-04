@@ -1,0 +1,27 @@
+# ============================================================================
+# check_minmag_pkg 运行依赖
+# Python: 3.11 (开发环境为 conda 环境 'salvus')
+# ============================================================================
+#
+# 核心分析主线 (noise_psd/ + eq_spectra/ + meteo/load_kefa_meteo.py + functions/)
+# 只需以下库:
+numpy<2.4       # functions/load_das_h5_PE2024.py 的 int(offset_index) 在 numpy>=2.4 下读 DAS 文件会抛 TypeError
+scipy
+pandas
+h5py
+matplotlib
+tqdm
+
+# ----------------------------------------------------------------------------
+# 仅【气象数据重算】需要的额外依赖 (meteo/acquire_era5/ 与 acquire_era5/3_to_csv.py)。
+# 若只用随包附带的 kefa_atmos_data.csv / kefa_wave_data.csv, 则【不需要】下面这些:
+#
+# xarray          # 读 NetCDF/合并再分析数据 (acquire_era5/3_to_csv.py)
+# cfgrib          # 读 GRIB (可选; 视下载格式而定)
+# netcdf4         # NetCDF 后端
+# cdsapi          # 从 CDS (Copernicus) 下载 ERA5 (acquire_era5/0_download_from_api.py; 需 ~/.cdsapirc 账号)
+# cartopy         # 仅 0_download_from_api.py 的下载后验证出图用
+# ----------------------------------------------------------------------------
+#
+# 注: PSD 重算 (noise_psd/1_*, eq_spectra/1_*) 还需外部大 DAS 数据 (默认放在包内 IN_DAS_data/) 与算力;
+#     纯使用成品 (products/noise_trends_*.h5 + meteo CSV) 时不需要 DAS。
