@@ -27,9 +27,8 @@ File:           functions/load_das_h5_PE2024.py
 Modifications:  One diagnostic print statement was commented out; otherwise the
                 file is unmodified.
 Licence:        No licence was supplied with this code. It is redistributed
-                here for research and reproducibility only; permission from
-                the original authors is being sought. All rights remain with
-                the authors.
+                here for research and reproducibility with the permission of
+                the original authors. All rights remain with the authors.
 
 
 2. ERA5 data — meteo/kefa_atmos_data.csv, meteo/kefa_wave_data.csv

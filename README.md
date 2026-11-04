@@ -241,5 +241,5 @@ and the Zenodo software archive (v1.0.0): https://doi.org/10.5281/zenodo.2071524
 MIT License — see [`LICENSE`](LICENSE). Copyright (c) 2026 Yuhan Wang.
 
 Exceptions (see [`NOTICE`](NOTICE)):
-- `functions/load_das_h5_PE2024.py` is third-party code by Pascal Edme (ETH Zürich), derived from original code by Sara Klaasen and Daniel Bowden, redistributed here for research and reproducibility while permission from the original authors is being sought.
+- `functions/load_das_h5_PE2024.py` is third-party code by Pascal Edme (ETH Zürich), derived from original code by Sara Klaasen and Daniel Bowden, redistributed here for research and reproducibility with the permission of the original authors.
 - `meteo/kefa_atmos_data.csv` and `meteo/kefa_wave_data.csv` contain modified Copernicus Climate Change Service (ERA5) information and are subject to the Copernicus terms of use.
