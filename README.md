@@ -1,8 +1,26 @@
 # yuhan_das_spectra — Spectral analysis tools for seafloor DAS: noise PSD/PPSD, earthquake spectra, noise–weather comparison
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20715241.svg)](https://doi.org/10.5281/zenodo.20715241)
+[![Preprint](https://img.shields.io/badge/preprint-ESS%20Open%20Archive-orange)](https://doi.org/10.22541/essoar.15006791/v1)
+[![License](https://img.shields.io/badge/license-MIT%2C%20see%20NOTICE-green)](NOTICE)
+[![Python](https://img.shields.io/badge/python-3.11%20tested-blue)](requirements.txt)
+
 A standalone spectral and meteorological analysis toolkit for seafloor Distributed Acoustic Sensing (DAS) strain-rate data (developed for the April–June 2024 Kefalonia Transform Fault deployment, Greece), covering continuous ambient noise characterization, Probabilistic Power Spectral Density (PPSD), noise–weather/wave coupling with ERA5 reanalysis, and earthquake spectral scaling — with minimum detectable magnitude ($M_c$) validation for matched-filter detection as one key application.
 
 > **Background & archive naming.** This repository is the standalone GitHub release of `check_minmag_pkg` from the Zenodo software archive [10.5281/zenodo.20715241](https://doi.org/10.5281/zenodo.20715241) (`matched_filter_release.zip`, where its folder name remains `check_minmag_pkg/`), originally distilled as two independent spectral pipelines, an ERA5 meteorological chain, and frozen data products from the internal `check_minmag_validity/` research project without modifying the source project.
+
+**Example outputs** (more in `noise_psd/example_outputs/` and `eq_spectra/example_outputs/`):
+
+<table>
+  <tr>
+    <td width="50%"><img src="noise_psd/example_outputs/ppsd_summary_50percentile_20240424-20240622.png" alt="Median PPSD across channels"><br><sub>Median (50th-percentile) PPSD across channels, 2024-04-24 to 2024-06-22 · <code>noise_psd/3_plot_ppsd.py</code></sub></td>
+    <td width="50%"><img src="noise_psd/example_outputs/noise_heatmap_f8-20Hz_p5.png" alt="8–20 Hz noise amplitude heatmaps"><br><sub>8–20 Hz noise amplitude proxy (P5) for all 55 channels at 40-min resolution · <code>noise_psd/4_analyse_noise_trends.py</code></sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="noise_psd/example_outputs/sg_meteo_channel_11.0.png" alt="Noise spectrogram against ERA5 wind and waves at 11.0 km"><br><sub>Noise spectrogram and band-averaged ASD at 11.0 km against ERA5 wind speed, significant wave height and mean wave period · <code>noise_psd/2_plot_results_with_wind_wave.py</code></sub></td>
+    <td width="50%"><img src="eq_spectra/example_outputs/psd_analysis_ch11p0km_20240424-20240622_M-1p0_5p0.png" alt="Earthquake spectra by magnitude at 11.0 km"><br><sub>Earthquake spectra binned by magnitude at 11.0 km over the ambient-noise PPSD, with the 8–20 Hz amplitude band highlighted · <code>eq_spectra/2_plot_psd_by_eq.py</code></sub></td>
+  </tr>
+</table>
 
 ---
 
