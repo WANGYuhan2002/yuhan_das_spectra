@@ -1,7 +1,7 @@
 # Citation metadata for yuhan_das_spectra (GitHub version of check_minmag_pkg
 # from the Zenodo archive v1.0.0).
 # Licence note: the code is MIT, except functions/load_das_h5_PE2024.py
-# (third-party code; see NOTICE) and the ERA5 CSVs in meteo/ (Copernicus terms).
+# (third-party code; see NOTICE) and the ERA5 CSVs in meteo/ (CC BY 4.0).
 cff-version: 1.2.0
 message: "If you use this software, please cite the paper (preferred-citation) and this software."
 title: "yuhan_das_spectra"

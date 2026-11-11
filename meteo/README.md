@@ -4,7 +4,7 @@
 
 This folder provides ERA5 (ECMWF Reanalysis v5) meteorological data for the Kefalonia DAS deployment area (April–June 2024) and a unified loading interface for those data.
 
-> **Data source and attribution:** the two CSVs are point extractions from the ERA5 reanalysis (Hersbach et al., 2020, https://doi.org/10.1002/qj.3803), produced by ECMWF for the Copernicus Climate Change Service (C3S) and obtained from the Copernicus Climate Data Store. Contains modified Copernicus Climate Change Service information. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. See also `../NOTICE`.
+> **Data source and attribution:** the two CSVs are point extractions from the ERA5 reanalysis (Hersbach et al., 2020, https://doi.org/10.1002/qj.3803), produced by ECMWF for the Copernicus Climate Change Service (C3S) and obtained from the Copernicus Climate Data Store. Contains modified Copernicus Climate Change Service information. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). See also `../NOTICE`.
 
 | File/Folder | Purpose |
 |---|---|

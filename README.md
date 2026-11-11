@@ -161,7 +161,7 @@ python meteo/acquire_era5/3_to_csv.py              # .nc → kefa_*_data.csv
   - The single-channel event-PSD sample `psd_data_channel_11.0km.h5` is also omitted from this GitHub repository because its HDF5 attributes store a machine-specific path (see `eq_spectra/example_outputs/sample_intermediate_psd_by_event/README.md`).
   - Recomputing full daily or per-event PSDs from scratch requires the continuous 80 Hz DAS archive (~1.4 TB), which is neither in this repository nor in the Zenodo archive.
 - **ERA5 Reanalysis Attribution**:
-  - `meteo/kefa_atmos_data.csv` and `meteo/kefa_wave_data.csv` are point extractions (nearest grid point to 38.5° N, 20.5° E, hourly, 2024-04-24 to 2024-06-22) from the **ERA5** reanalysis (Hersbach et al., 2020, https://doi.org/10.1002/qj.3803), produced by ECMWF for the **Copernicus Climate Change Service (C3S)** and obtained from the Copernicus Climate Data Store. Contains modified Copernicus Climate Change Service information. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. See [`NOTICE`](NOTICE).
+  - `meteo/kefa_atmos_data.csv` and `meteo/kefa_wave_data.csv` are point extractions (nearest grid point to 38.5° N, 20.5° E, hourly, 2024-04-24 to 2024-06-22) from the **ERA5** reanalysis (Hersbach et al., 2020, https://doi.org/10.1002/qj.3803), produced by ECMWF for the **Copernicus Climate Change Service (C3S)** and obtained from the Copernicus Climate Data Store. Contains modified Copernicus Climate Change Service information. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See [`NOTICE`](NOTICE).
 
 ---
 
@@ -242,4 +242,4 @@ MIT License — see [`LICENSE`](LICENSE). Copyright (c) 2026 Yuhan Wang.
 
 Exceptions (see [`NOTICE`](NOTICE)):
 - `functions/load_das_h5_PE2024.py` is third-party code by Pascal Edme (ETH Zürich), derived from original code by Sara Klaasen and Daniel Bowden, redistributed here for research and reproducibility with the permission of the original authors.
-- `meteo/kefa_atmos_data.csv` and `meteo/kefa_wave_data.csv` contain modified Copernicus Climate Change Service (ERA5) information and are subject to the Copernicus terms of use.
+- `meteo/kefa_atmos_data.csv` and `meteo/kefa_wave_data.csv` contain modified Copernicus Climate Change Service (ERA5) information and are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
